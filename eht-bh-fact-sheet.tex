@@ -7,10 +7,11 @@
 %\date{\today}
 %\institute{ShareLaTeX Institute}
  
-\usepackage{blindtext}
 \usepackage{comment}
  
-\usetheme{Board}
+% \usetheme{Rays}
+% \usetheme{Board}
+\usetheme{Simple}
  
 \begin{document}
  
@@ -19,24 +20,24 @@
 \linespread{1.25}
 
 \begin{columns}
-    \column{0.6}
+    \column{0.55}
     \block{Units}
     {
       In $G=c=1$ units, masses and lengths and times are all the same.
       \begin{align*}
-        \text{Mass of Sun} = M_{\odot} \approx 2\cdot 10^{30} \text{~kg}
-        \approx 1.5 \text{~km} \approx 5 ~\mu\text{s}
+        \text{Mass of Sun} = M_{\odot} \approx 2\cdot 10^{30} \text{ kg}
+        \approx 1.5 \text{ km} \approx 5 \, \mu\text{s}
       \end{align*}
       Astronomical distances are typically measured in AU, parsec, or
       light-year, depending on context
       \begin{align*}
-        1 \text{~AU} &\approx 1.5\cdot 10^8 \text{~km} && \text{(pluto is at ~40 AU)} \\
-        1 \text{~pc} &\approx 3 \text{~ly} \approx 3\cdot 10^{13} km	&&	\text{(distance to Alpha Cen is 1.3 pc)}
+        1 \text{ AU} &\approx 1.5\cdot 10^8 \text{ km} && \text{(pluto is at $\sim$40 AU)} \\
+        1 \text{ pc} &\approx 3 \text{ ly} \approx 3\cdot 10^{13}\text{ km}	&&	\text{(distance to Alpha Cen is 1.3 pc)}
       \end{align*}
       Angles can be measured in radians ($2\pi$ around a circle), or
       arcseconds (1/3600$^{\text{th}}$ of a degree)
       \begin{align*}
-        1 \text{~rad} \approx 206265 \text{~arcsec}
+        1 \text{ rad} \approx 206265 \text{ arcsec}
       \end{align*}
 
     }
@@ -48,7 +49,7 @@
       hole, and it is \emph{linear} with the BH’s mass (contrast with
       constant density objects).
         \begin{align*}
-          R_{s} &= 2\frac{GM}{c^{2}} & \text{(in G=c=1 units, simply $R_s$ = 2M)}
+          R_{s} &= 2\frac{GM}{c^{2}} & \text{(in $G=c=1$ units, simply $R_s = 2M$)}
         \end{align*}
       The event horizon of a non-spinning BH is located at the
       Schwarzschild radius (everything below will be for a
@@ -95,12 +96,12 @@
         shadow}. Almost no light comes from interior to $R_c$.
     }
 
-    \column{0.4}
+    \column{0.45}
     \block{Imaging}
     {
       Suppose you try to image a BH with a telescope of diameter
       $D_{\text{tel}}$, using light of wavelength $\lambda$. The
-      telescope resolution is given by Rayleigh’s criterion,
+      telescope resolution is given by \emph{Rayleigh’s criterion},
       \begin{align*}
         \theta_{\text{res}} \approx \frac{\lambda}{D_{\text{tel}}}
       \end{align*}
@@ -116,10 +117,10 @@
       $\theta_{s}$.
 
       If you use $\lambda=1.3$mm radio waves, and make the whole Earth
-      your telescope, so $D_{\text{tel}} \approx 1.3\cdot 10^{4}$ km,
+      your telescope, $D_{\text{tel}} \approx 1.3\cdot 10^{4}$ km,
       your limit will be
       \begin{align*}
-        \theta_{\text{res}} \approx 10^{-10} \text{~rad} \approx 20 \mu\text{arcsec}
+        \theta_{\text{res}} \approx 10^{-10} \text{ rad} \approx 20 \,\mu\text{arcsec}
       \end{align*}
 
     }
