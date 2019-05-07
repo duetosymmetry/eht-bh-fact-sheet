@@ -1,27 +1,29 @@
 \documentclass[25pt, a0paper, landscape]{tikzposter}
+\tikzposterlatexaffectionproofoff
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
- 
+\usepackage{graphicx}
+
 \title{EHT and black hole fact sheet}
-%\author{Leo C. Stein}
+\author{Leo C. Stein}
 %\date{\today}
 %\institute{ShareLaTeX Institute}
- 
+
 \usepackage{comment}
- 
+
 % \usetheme{Rays}
 % \usetheme{Board}
 \usetheme{Simple}
- 
+
 \begin{document}
- 
+
 \maketitle
 
 \linespread{1.25}
 
 \begin{columns}
-    \column{0.55}
-    \block{Units}
+  \column{0.5}
+  \block{Units}
     {
       In $G=c=1$ units, masses and lengths and times are all the same.
       \begin{align*}
@@ -31,7 +33,7 @@
       Astronomical distances are typically measured in AU, parsec, or
       light-year, depending on context
       \begin{align*}
-        1 \text{ AU} &\approx 1.5\cdot 10^8 \text{ km} && \text{(pluto is at $\sim$40 AU)} \\
+        1 \text{ AU} &\approx 1.5\cdot 10^8 \text{ km} && \text{(Pluto is at $\sim$40 AU)} \\
         1 \text{ pc} &\approx 3 \text{ ly} \approx 3\cdot 10^{13}\text{ km}	&&	\text{(distance to Alpha Cen is 1.3 pc)}
       \end{align*}
       Angles can be measured in radians ($2\pi$ around a circle), or
@@ -41,7 +43,6 @@
       \end{align*}
 
     }
-
     \block{Black hole basics}
     {\setlength{\parskip}{1cm plus 4mm minus 3mm}
 
@@ -84,19 +85,37 @@
       commonly infalling matter in an ``accretion disk.'' Matter
       slowly spirals inward (because of hydrodynamics, not because the
       BH is ``sucking'') until it gets to about $R_{\text{ISCO}}$, and
-      then plunges down toward and through the event horizon. This
+      then plunges toward and through the event horizon. This
       matter gets hotter and brighter as it gets closer in; most of
       the emission comes from near $R_{\text{ISCO}}$. The time for
-      matter to orbit at RISCO sets a characteristic time for imaging.
+      matter to orbit at $R_{\text{ISCO}}$ sets a characteristic time for imaging.
 
       Even though most of the light is emitted near $R_{\text{ISCO}}$,
       light rays can skim the photon orbit and come back out; they
       seem to originate from $R_{\text{ph}}$, meaning they \emph{appear} as a
       ring with radius $R_{c}$. This is the \textbf{black hole
-        shadow}. Almost no light comes from interior to $R_c$.
+        shadow}. Almost no light comes from inside $R_c$.
     }
 
-    \column{0.45}
+    \column{.2}
+    \block{}{
+
+      \vspace{8em}
+
+      The shadow of M87 A*. \\
+      Credit: Event Horizon Telescope Collaboration
+      \vspace{.3em}
+      \begin{center}
+        \includegraphics[width=20em, trim={20cm 20cm 20cm 20cm}, clip]{m87a-img-square}
+
+        \vspace{1em}
+
+        \includegraphics[width=20em]{bh-dist-fig}
+      \end{center}
+
+    }
+
+    \column{0.3}
     \block{Imaging}
     {
       Suppose you try to image a BH with a telescope of diameter
@@ -129,7 +148,7 @@
     {
       \innerblock{Sgr A*}{
         Sgr A* is the name of the supermassive black hole (SMBH) in
-        our own Milky Way galaxy. It has a mass of 
+        our own Milky Way galaxy. It has a mass of
         \begin{align*}
           M_{\text{Sgr A*}} \approx 4\cdot10^6 M_\odot \approx 6\cdot10^6\text{ km} \approx 20\text{ s}
         \end{align*}
@@ -166,5 +185,5 @@
       }
     }
 \end{columns}
- 
+
 \end{document}
